@@ -3,11 +3,11 @@
 	<head>
 		<meta charset="utf-8">
         <title>Lojinho do Bruno</title>
-    
         <link href="css/geral.css" rel="stylesheet">
         <link href="css/home.css" rel="stylesheet">
         <script src="https://kit.fontawesome.com/60ef12384d.js"></script>
         <link rel="icon" type="image/gif" href="img/poke-favicon.png">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     </head>
     <body>
         <header class="container">
@@ -52,7 +52,7 @@
                             <ul>
 
                             </ul>
-                            <input type="text" name="procurar" placeholder="Digite o prduto desejado">
+                            <input type="text" name="procurar" placeholder="Digite o produto desejado" id="procurar">
                             <button type="button" class="btn-top"><i class="fa fa-search"></i></button>
                         </div>
                     </div>
@@ -67,6 +67,18 @@
             </div> 
         </header>
         <section class="conteudo">
+                <div class="formBanner">
+                <div class="formTab">
+                    <h3>Entre em contato</h3>
+                </div>
+                <div class="formConteudo">
+                    <form class="form">
+                        <input class="campo" type="text" name="nome" id="nome" placeholder="Digite seu nome">
+                        <input class="campo" type="email" name="email" id="emailForm" placeholder="Digite seu e-mail">
+                        <input class="campo" type="tel" name="telefone" id="telefone" placeholder="Digite seu telefone" maxlength="13">
+                    </form>
+                </div>    
+                </div>
                 <div class="banner">
                     <img src="img/banner-promocao.jpg" alt="banner">
                 </div>

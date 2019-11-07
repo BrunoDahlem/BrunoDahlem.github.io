@@ -1,0 +1,287 @@
+*{
+    margin:0;
+    padding: 0;
+    font-family: sans-serif;
+    text-decoration: none;
+    color:#fff;
+}
+img{
+    width: 100%;
+    height: 100%;
+}
+.container{
+    width: 100%;
+}
+.top{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    background: #000000;
+    align-items: center;
+    min-height: 30px;
+    width: 100%;
+    font-size: 12px; 
+}
+/*.middle{
+    display: flex;
+    background: #a0a0a0;
+    min-height: 90px;
+    width: 100%;
+}*/
+.header{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    background:linear-gradient(to bottom , #000 50%, #EC1C24 50%);
+    min-height: 180px;
+    width: 100%;
+}
+header{
+    color:#fff;
+}
+.lista-top{
+    display: flex;
+    flex-direction: row;
+}
+.lista-top li{
+    padding: 0 5px;
+    list-style-type: none;
+    border-right: #fff solid 2px;
+}
+.lista-top li:nth-child(4){
+    border: none;
+}
+.wpp{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+i{
+    padding:0 5px; 
+}
+.login{
+    display: flex;
+    flex-direction: row;
+}
+.logoHeader{
+    position: absolute;
+    width: 150px;
+    height: 150px;
+    transition: 1s;
+    z-index: 1;
+    transform: rotate(-360deg);
+    left: 30px;
+    top:45;
+}
+#logo{
+    background-size: contain;
+}
+.logo-abs {
+    position: absolute;
+    z-index: 2;
+    left: 54px;
+    top: 74px;
+    width: 100px;
+    height: 100px;
+}
+.logoHeader:hover{
+    transform: rotate(360deg);
+    transition: 1s;
+}
+.menu{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+.banner{
+    width: 100%;
+    height: 520px;
+}
+.logo{
+    width: 110px;
+    height: 110px;
+    transition: 1s;
+    transform: rotate(-360deg);
+}
+.logo:hover{
+    transition: 1s;
+    transform: rotate(360deg);
+}
+.footer{
+    padding:20px 0;
+    background: #000;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around; 
+    color:#fff;
+    min-height: 10px;
+}
+.news{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+.news p{
+    font-size: 12px; 
+    max-width: 250px; 
+}
+#email{
+    height: 30px;
+    width: 100%;
+    background: #000;
+    border:2px solid #a0a0a0; 
+    color:#fff;
+    padding: 10px;
+}
+#email::placeholder{
+    padding: 10px;
+    color:#fff;
+}
+.btn{
+    background: #EC1C24;
+    color: #fff;
+    font-weight: bold;
+    border:none;
+    border-radius: 10px;
+    height: 30px;
+    width: 130px;
+    align-self: center; 
+    cursor: pointer;
+}
+.lista-footer{
+    font-size: 12px;
+    height: 200px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    cursor: pointer;
+}
+.tittle{
+    max-width: 130px;
+    padding-bottom:10px;
+    margin-bottom: 10px;
+    border-bottom:2px solid #EC1C24; 
+    align-self: center;
+}
+.container .lista-footer li {
+    margin-bottom:5px;
+    padding-bottom: 5px;
+    border-bottom: 2px solid rgba(125, 0,0,0);  
+}
+.container .lista-footer li:hover{
+    border-bottom: 2px solid #EC1C24;
+    transition: 1s;
+}
+body > footer > div > div:nth-child(5) > ul{
+    justify-content: flex-start;
+}
+.separador{
+    margin: -1px 30px; 
+    background: #a0a0a0;
+    height: 2px;
+    z-index: 1px;
+}
+.desenvolvedor{
+    font-size: 12px;
+    padding:20px 30px;
+    background: #000;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: flex-end; 
+    color:#fff;
+}
+body > footer > div:nth-child(3) > div > a{
+    margin-left: 2px;
+    font-weight:bold; 
+}
+.departamento{
+    margin: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.departamento h2{
+    color: #000;
+}
+.titulo-departamento{
+    align-self: center;
+    margin-bottom: 20px;
+    border-bottom: 2px solid #000;
+}
+.depar-conteudo{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+.titulo-n{
+    background: #FF0009;
+    height: 20px;
+    padding: 10px;
+}
+.nintendo ul{
+    background: #D90005;
+    padding: 10px;
+    height: 100px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    font-size: 12px;
+    list-style-type: none;
+}
+.titulo-p{
+    background: #006DD9;
+    height: 20px;
+    padding: 10px;
+}
+.play ul{
+    background: #0061C1;
+    padding: 10px;
+    height: 100px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    font-size: 12px;
+    list-style-type: none;
+}
+.titulo-x{
+    background: #01AF54;
+    height: 20px;
+    padding: 10px;
+}
+.xbox ul{
+    background: #009045;
+    padding: 10px;
+    height: 100px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    font-size: 12px;
+    list-style-type: none;
+}
+.titulo-pc{
+    background: #3C3C3C;
+    height: 20px;
+    padding: 10px;
+}
+.pc ul{
+    background: #000;
+    padding: 10px;
+    height: 100px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    font-size: 12px;
+    list-style-type: none;
+}
+.img-consoles{
+    transition: 1s;
+    width: 293px;
+    height: 153px;
+}
+.img-consoles:hover{
+    transform: scale(1.1);
+    transition: 1s;
+}

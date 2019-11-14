@@ -20,6 +20,10 @@ img{
     justify-content: space-around;
     align-content: space-around;
 }
+.divisoria{
+    border-bottom: 1px solid #a1a1a1;
+    padding: 7px 0;
+}
 /* Parte onde se altera o header */
 
 /* Parte onde se altera o topo */
@@ -27,6 +31,16 @@ img{
     background: #000;
     height: 50px;
     width: 100%;
+}
+.top{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+.top p{
+    color:#fff;
+
 }
 /* Parte onde se altera as redes socias */
 .redes{
@@ -45,6 +59,7 @@ img{
     margin: 10px;
     font-size: 20px;
     color:#000;
+    cursor: pointer;
 }
 .fab:hover{
     animation-name:moveRedes;
@@ -55,13 +70,7 @@ img{
     width: 350px;
 }
 /* Parte onde se altera o whats */
-#whats{
-    width: 50px;
-    position: absolute;
-    top: 50px;
-    right: 20px;
-    cursor: pointer;
-}
+
 /* Parte onde se altera o menu */
 nav a{
     color:#000;
@@ -74,7 +83,7 @@ nav a:hover{
     flex-direction:row;
     justify-content: center;
     align-items: center;
-    height: 85px;
+    height: 100%;
 }
 .menu{
     color: #000;
@@ -88,6 +97,9 @@ nav a:hover{
 }
 .menu:active {
     box-shadow: inset -2px 2px 3px 3px rgba(0, 0, 0, 0.42);
+}
+ul.border{
+    margin-bottom: 0;
 }
 /*Parte onde faremos as animações*/
 @keyframes moveRedes{

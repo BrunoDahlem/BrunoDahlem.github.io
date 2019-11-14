@@ -1,332 +1,110 @@
+/* Parte onde se altera o geral do site */
 *{
-    margin:0;
-    padding: 0;
-    font-family: sans-serif;
-    text-decoration: none;
-    color:#fff;
+    outline: none;
+    list-style-type: none;
+    text-decoration: none !important;
+    padding-inline-start:0;
 }
 img{
     width: 100%;
-    height: 100%;
 }
-.container{
-    width: 100%;
-}
-.top{
+.linear{
     display: flex;
     flex-direction: row;
     justify-content: space-around;
-    background: #000000;
-    align-items: center;
-    min-height: 30px;
-    width: 100%;
-    font-size: 12px; 
 }
-/*.middle{
+.coluna{
+    margin-left:20px;
     display: flex;
-    background: #a0a0a0;
-    min-height: 90px;
+    flex-direction: column;
+    justify-content: space-around;
+    align-content: space-around;
+}
+/* Parte onde se altera o header */
+
+/* Parte onde se altera o topo */
+.topo{
+    background: #000;
+    height: 50px;
     width: 100%;
-}*/
-.header{
+}
+/* Parte onde se altera as redes socias */
+.redes{
     display: flex;
     flex-direction: row;
+    justify-content: flex-end;
+}
+.icone{
+    display: flex;
+    justify-content: center;
     align-items: center;
-    justify-content: space-around;
-    background:linear-gradient(to bottom , #000 50%, #EC1C24 50%);
-    min-height: 180px;
-    width: 100%;
-}
-header{
-    color:#fff;
-}
-#procurar{
+    background: #fff;
+    border-radius: 100%;
+    width: 34px;
+    height: 31px;
+    margin: 10px;
+    font-size: 20px;
     color:#000;
 }
-.lista-top{
-    display: flex;
-    flex-direction: row;
+.fab:hover{
+    animation-name:moveRedes;
+    animation-duration: .2s; 
 }
-.lista-top li{
-    padding: 0 5px;
-    list-style-type: none;
-    border-right: #fff solid 2px;
+/* Parte onde se altera a logo */
+.logo{
+    width: 350px;
 }
-.lista-top li:nth-child(4){
-    border: none;
-}
-.wpp{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-}
-i{
-    padding:0 5px; 
-}
-.login{
-    display: flex;
-    flex-direction: row;
-}
-.logoHeader{
+/* Parte onde se altera o whats */
+#whats{
+    width: 50px;
     position: absolute;
-    width: 150px;
-    height: 150px;
-    transition: 1s;
-    z-index: 1;
-    transform: rotate(-360deg);
-    left: 30px;
-    top:45;
+    top: 50px;
+    right: 20px;
+    cursor: pointer;
 }
-#logo{
-    background-size: contain;
+/* Parte onde se altera o menu */
+nav a{
+    color:#000;
 }
-.logo-abs {
-    position: absolute;
-    z-index: 2;
-    left: 54px;
-    top: 74px;
-    width: 100px;
-    height: 100px;
+nav a:hover{
+    color:#000;
 }
-.logoHeader:hover{
-    transform: rotate(360deg);
-    transition: 1s;
+.lista{
+    display: flex;
+    flex-direction:row;
+    justify-content: center;
+    align-items: center;
+    height: 85px;
 }
 .menu{
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-}
-.conteudo{
-    position: relative;
-}
-.formBanner::before{
-    display: block;
-    content: '';
-    height: 2px;
-    width: 100%;
-    background: lightgrey;
-}
-.formTab{
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    padding: 10px 0 10px 0;
-    background: #EC1C24;
-}
-.formBanner{
-    position: absolute;
-    z-index: 2;
-    top:0;
-    left: 975px;
-    width: 274px;
-}
-.formConteudo{
-    background: #EC1C24;
-}
-.form{
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-    align-items: center;
-    width: 100%;
-}
-.campo{
-    margin-bottom:10px;
-    color:#000;
-    padding: 5px; 
-}
-.campo::placeholder{
-    padding: 10px 10px 10px 5px;
-}
-.banner{
-    width: 100%;
-    height: 520px;
-}
-.logo{
-    width: 110px;
-    height: 110px;
-    transition: 1s;
-    transform: rotate(-360deg);
-}
-.logo:hover{
-    transition: 1s;
-    transform: rotate(360deg);
-}
-.footer{
-    padding:20px 0;
-    background: #000;
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: space-around; 
-    color:#fff;
-    min-height: 10px;
-}
-.news{
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-}
-.news p{
-    font-size: 12px; 
-    max-width: 250px; 
-}
-#email{
-    height: 30px;
-    width: 100%;
-    background: #000;
-    border:2px solid #a0a0a0; 
-    color:#fff;
-    padding: 10px;
-}
-#email::placeholder{
-    padding: 10px;
-    color:#fff;
-}
-.btn{
-    background: #EC1C24;
-    color: #fff;
-    font-weight: bold;
-    border:none;
-    border-radius: 10px;
-    height: 30px;
-    width: 130px;
-    align-self: center; 
-    cursor: pointer;
-}
-.lista-footer{
-    font-size: 12px;
-    height: 200px;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-    cursor: pointer;
-}
-.tittle{
-    max-width: 130px;
-    padding-bottom:10px;
-    margin-bottom: 10px;
-    border-bottom:2px solid #EC1C24; 
-    align-self: center;
-}
-.container .lista-footer li {
-    margin-bottom:5px;
-    padding-bottom: 5px;
-    border-bottom: 2px solid rgba(125, 0,0,0);  
-}
-.container .lista-footer li:hover{
-    border-bottom: 2px solid #EC1C24;
-    transition: 1s;
-}
-body > footer > div > div:nth-child(5) > ul{
-    justify-content: flex-start;
-}
-.separador{
-    margin: -1px 30px; 
-    background: #a0a0a0;
-    height: 2px;
-    z-index: 1px;
-}
-.desenvolvedor{
-    font-size: 12px;
-    padding:20px 30px;
-    background: #000;
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: flex-end; 
-    color:#fff;
-}
-body > footer > div:nth-child(3) > div > a{
-    margin-left: 2px;
-    font-weight:bold; 
-}
-.departamento{
-    margin: 30px;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-}
-.departamento h2{
     color: #000;
+    font-size: 24px;
+    margin: 1px;
+    padding: 20px;
+    border-radius: 5px;
 }
-.titulo-departamento{
-    align-self: center;
-    margin-bottom: 20px;
-    border-bottom: 2px solid #000;
+.menu:hover{
+    text-shadow:1px 1px rgba(0, 0, 0, 0.42);
 }
-.depar-conteudo{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
+.menu:active {
+    box-shadow: inset -2px 2px 3px 3px rgba(0, 0, 0, 0.42);
 }
-.titulo-n{
-    background: #FF0009;
-    height: 20px;
-    padding: 10px;
+/*Parte onde faremos as animações*/
+@keyframes moveRedes{
+   0% {transform: translateX(0px);}
+   25% {transform: translateX(-5px);}
+   50% {transform: translateX(0px);}
+   75% {transform: translateX(5px);}
+   100% {transform: translateX(0px);}
 }
-.nintendo ul{
-    background: #D90005;
-    padding: 10px;
-    height: 100px;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-    font-size: 12px;
-    list-style-type: none;
+/*Parte onde arrumaremos as resoluções*/
+@media (min-width: 1920px) {
+    .container{
+        width: 1920px;
+    }
 }
-.titulo-p{
-    background: #006DD9;
-    height: 20px;
-    padding: 10px;
-}
-.play ul{
-    background: #0061C1;
-    padding: 10px;
-    height: 100px;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-    font-size: 12px;
-    list-style-type: none;
-}
-.titulo-x{
-    background: #01AF54;
-    height: 20px;
-    padding: 10px;
-}
-.xbox ul{
-    background: #009045;
-    padding: 10px;
-    height: 100px;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-    font-size: 12px;
-    list-style-type: none;
-}
-.titulo-pc{
-    background: #3C3C3C;
-    height: 20px;
-    padding: 10px;
-}
-.pc ul{
-    background: #000;
-    padding: 10px;
-    height: 100px;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-    font-size: 12px;
-    list-style-type: none;
-}
-.img-consoles{
-    transition: 1s;
-    width: 293px;
-    height: 153px;
-}
-.img-consoles:hover{
-    transform: scale(1.1);
-    transition: 1s;
+@media (min-width: 2560px) {
+    .container{
+        width: 2560px;
+    }
 }

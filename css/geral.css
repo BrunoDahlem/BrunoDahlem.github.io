@@ -65,6 +65,15 @@ img{
     animation-name:moveRedes;
     animation-duration: .2s; 
 }
+#face:hover{
+    background: blue;
+}
+#insta:hover{
+    background:linear-gradient(to right ,#fb0505,#fb7607,#f4ea07,#61f205,#00f6cb)
+}
+#you:hover{
+    background: red;
+}
 /* Parte onde se altera a logo */
 .logo{
     width: 350px;

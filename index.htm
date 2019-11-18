@@ -1,208 +1,58 @@
 <!DOCTYPE html>
 <html>
-	<head>
-		<meta charset="utf-8">
-        <title>Lojinho do Bruno</title>
+    <head>
+        <meta charset="utf-8">
+        <title>Cardoso Sancas | Home</title>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
         <link href="css/geral.css" rel="stylesheet">
         <link href="css/home.css" rel="stylesheet">
         <script src="https://kit.fontawesome.com/60ef12384d.js"></script>
-        <link rel="icon" type="image/gif" href="img/poke-favicon.png">
+        <link rel="icon" type="image/png" href="img/fav.png">
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     </head>
     <body>
-        <header class="container">
-            <div class="top">
-                <p>Seja Bem-Vindo a nossa Loja!</p>
-                <nav>
-                    <ul class="lista-top">
-                        <li>Nossas Lojas</li>
-                        <li>Troca e Devoluções</li>
-                        <li>Assistência Técnica</li>
-                        <li>Contato</li>
-                    </ul>
-                </nav>
-                <div class="wpp">
-                    <div>
-                        <i class="fab fa-whatsapp"></i>
+        <header>
+            <div class="topo">
+                <div class="container">
+                    <div class="row top">
+                        <div class="col-md-6 col-sm-12 col-xs-12">
+                            <p>Horário de Atendimento: 8h ás 18h</p>
+                        </div>
+                        <div class="col-md-6 col-sm-12 col-xs-12">
+                            <li class="redes">
+                                <ul class="icone" id="face"><i class="fab fa-facebook-f"></i></ul>
+                                <ul class="icone" id="insta"><i class="fab fa-instagram"></i></ul>
+                                <ul class="icone" id="you"><i class="fab fa-youtube"></i></ul>
+                            </li>
+                        </div>
                     </div>
-                        <p>Atendimento por Whatsapp</p>
-                </div>
-                <div>
-                    <i class="fab fa-facebook-square"></i>
-                    <i class="fab fa-instagram"></i>
-                </div>
-                <div class="login">
-                    <i class="far fa-user"></i>
-                    <p>Minha Conta</p>
-                    <i class="fas fa-lock"></i>
-                    <p>Login</p>
                 </div>
             </div>
-            <div class="header">
-                    <div class="logo-abs">
-                            <img id="logo" src="img/Lugia.gif">
-                        </div>
-                <div class="logoHeader">
-                    <img src="img/Logo.png">
+            <div class="container">
+                <div class="row linear divisoria">
+                    <div class="col-md-4 col-sm-12 col-xs-12 logo">
+                        <div class="efeitinho"></div> 
+                            <a href="index.htm"><img src="img/logo-roda.png" alt="logo rodaforros"></a>   
+                    </div>
+                    <nav class="col-md-8">
+                        <li class="lista">
+                            <ul class="border"><a href="index.htm" class="menu">Home</a></ul>
+                            <ul class="border"><a href="" class="menu">Produtos</a></ul>
+                            <ul class="border"><a href="" class="menu">Faça um Orçamento</a></ul>
+                            <ul class="border"><a href="" class="menu">Entre em Contato</a></ul>
+                        </li>
+                    </nav>
                 </div>
-                
-                <div class="menu">
-                    <div>
-                        <div>
-                            <ul>
-
-                            </ul>
-                            <input type="text" name="procurar" placeholder="Digite o produto desejado" id="procurar">
-                            <button type="button" class="btn-top"><i class="fa fa-search"></i></button>
-                        </div>
-                    </div>
-                    <div>
-                        <nav>
-                            <ul>
-
-                            </ul>
-                        </nav>
-                    </div>
-                </div>   
-            </div> 
+            </div>
         </header>
-        <section class="conteudo">
-                <div class="formBanner">
-                <div class="formTab">
-                    <h3>Entre em contato</h3>
-                </div>
-                <div class="formConteudo">
-                    <form class="form">
-                        <input class="campo" type="text" name="nome" id="nome" placeholder="Digite seu nome">
-                        <input class="campo" type="email" name="email" id="emailForm" placeholder="Digite seu e-mail">
-                        <input class="campo" type="tel" name="telefone" id="telefone" placeholder="Digite seu telefone" maxlength="13">
-                    </form>
-                </div>    
-                </div>
-                <div class="banner">
-                    <img src="img/banner-promocao.jpg" alt="banner">
-                </div>
-                <div class="departamento">
-                    <div class="titulo-departamento">
-                        <h2>Departamentos:</h2>
-                    </div>
-                    <div class="depar-conteudo">
-                        <div>
-                            <div class="img-consoles">
-                                <img src="img/switch.jpg">
-                            </div>
-                            <div class="titulo-n">
-                                <h5>Nintendo</h5>
-                            </div>
-                            <div class="nintendo">
-                            <ul>
-                                <li>Nintendo Switch</li>
-                                <li>Nintendo 3DS</li>
-                                <li>Nintendo Wii U</li>
-                                <li>Amiibos</li>
-                            </ul>
-                            </div>
-                        </div>
-                        <div>
-                            <div class="img-consoles">
-                                <img src="img/ps4.jpg">
-                            </div>
-                            <div class="titulo-p">
-                                <h5>Playstation</h5>
-                            </div>
-                            <div class="play">
-                                <ul>
-                                    <li>Playstation 4</li>
-                                    <li>Playstation VR</li>
-                                    <li>Playstation 3</li>
-                                    <li>Playstation 2</li>
-                                </ul>
-                            </div>
-                        </div>
-                        <div>
-                            <div class="img-consoles">
-                                <img src="img/xbox-one-X.jpg">
-                            </div>
-                            <div class="titulo-x">
-                                <h5>Xbox</h5>
-                            </div>
-                            <div class="xbox">
-                                <ul>
-                                    <li>Xbox 360</li>
-                                    <li>Xbox ONE</li>
-                                    <li>Kinect</li>
-                                    <li>Retrocompatibilidade</li>
-                                </ul>
-                            </div>
-                        </div>
-                        <div>
-                            <div class="img-consoles">
-                                <img src="img/pcgamersite.jpg">
-                            </div>
-                            <div class="titulo-pc">
-                                <h5>Pc Gamer</h5>
-                            </div>
-                            <div class="pc">                                    
-                                <ul>
-                                    <li>Acessórios</li>
-                                    <li>Computadores</li>
-                                    <li>Jogos</li>
-                                    <li>Informática</li>
-                                </ul>
-                            </div>
-                        </div>
-                </div>
+        <section class="banner col-md-12">
+            <img src="img/banner.jpg" alt="banner">
         </section>
-        <footer>
-            <div class="container footer">
-            <div class="logo">
-                <img src="img/Logo.png" alt="Logo">
+        <section class="container">
+            <div class="row">
+
             </div>
-            <div class="news">
-                <h3 class="tittle">Newsletter</h3>
-                <p>Cadastre abaixo o seu e-mail e receba ofertas e novidades semanalmente.</p>
-                <input type="email" name="email" id="email" placeholder="Digite seu email">
-                <button type="button" class="btn">Cadastrar</button>
-            </div>
-            <div class="news">
-                <h3 class="tittle">Institucional</h3>
-                <ul class="lista-footer">
-                    <li>Nossas Lojas</li>
-                    <li>Política de Privacidade</li>
-                    <li>Trabalhe Conosco</li>
-                    <li>Quem somos</li>
-                    <li>Cadastre-se</li>
-                </ul>
-            </div>
-            <div class="news">
-                <h3 class="tittle">Atendimento e suporte</h3>
-                <ul class="lista-footer">
-                    <li>SAC Gameline</li>
-                    <li>Formas de Entrega</li>
-                    <li>Formas de Pagamento</li>
-                    <li>Trocas e Devoluções</li>
-                    <li>Garantia</li>
-                    <li>Assistência Técnica</li>
-                </ul>
-            </div>
-            <div class="news">
-                <h3 class="tittle">Minha conta</h3>
-                <ul class="lista-footer">
-                    <li>Meus Pedidos</li>
-                    <li>Minha Conta</li>
-                    <li>Cadastre-se</li>
-                </ul>
-            </div>
-            </div>
-           
-               <div class="separador"></div>
-             
-            <div class="desenvolvedor">
-                <div class="footer">
-                    <p>Desenvolvido por</p> 
-                    <a href="#">Bruno Dahlem</a>
-                </div>
-            </div>
-        </footer>
+        </section>
+        <script src="js/geral.js"></script>
     </body>
 </html>

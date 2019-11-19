@@ -39,7 +39,7 @@ img{
 .top{
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
+    justify-content: space-around;
     align-items: center;
 }
 .top p{
@@ -187,6 +187,13 @@ ul.border{
     overflow: auto;
     margin-top: 10px;
 }
+.conteudo p::-webkit-scrollbar{
+    width: 10px;
+}
+.conteudo p::-webkit-scrollbar-thumb{
+    background: linear-gradient(45deg,transparent,black);
+    border-radius: 10px;
+}
 /*Parte onde faremos as animações*/
 @keyframes moveRedes{
    0% {transform: translateX(0px);}
@@ -196,7 +203,27 @@ ul.border{
    100% {transform: translateX(0px);}
 }
 /*Parte onde arrumaremos as resoluções*/
-/* @media (min-width: 320px) {
+@media (max-width:768px){
+    .linear{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .topo{
+        height: 77px;
+    }
+    .top{
+        flex-wrap: wrap-reverse;
+        text-align: center;
+        height: 67px;
+    }
+    .redes{
+        margin-top:20px ;
+        justify-content: center;
+    }
+    .produtos{
+        flex-wrap: wrap;
+    }
     #face{
         background: #3b5998;
         color:#fff;
@@ -209,7 +236,7 @@ ul.border{
         background: #c4302b;
         color:#fff;
     }
-} */
+}
 @media (min-width: 1920px) {
     .container{
         width: 1920px;

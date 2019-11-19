@@ -25,6 +25,9 @@ img{
     border-bottom: 1px solid #a1a1a1;
     padding: 7px 0;
 }
+.titulo{
+    text-align: center;
+}
 /* Parte onde se altera o header */
 
 /* Parte onde se altera o topo */
@@ -136,6 +139,53 @@ ul.border{
     margin-top: 10px;
     padding-right: 0;
     padding-left: 0;
+}
+/*Parte onde se altera os produtos*/
+.produtos{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+.produtotitulo:after {
+    content: " ";
+    display: block;
+    position: absolute;
+    width: 0;
+    height: 42px;
+    background: linear-gradient(45deg, black, transparent);
+    transition: width 0.5s;
+    top: 200px;
+    border-radius: 10px;
+}
+.rodaforro{
+    width: 200px;
+    align-self: center;
+}
+.conteudo{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-content: space-around;
+    border: 2px solid #756d6d;
+    border-radius: 10px;
+    margin: 30px 20px;
+    height: 450px;
+    transition: .5s;
+}
+.conteudo:hover {
+    box-shadow: 8px 3px 3px 3px rgba(0, 0, 0, 0.42);
+    transition: .5s;
+}
+.conteudo:hover .produtotitulo{
+    color: #fff;
+}
+.conteudo:hover .produtotitulo:after{
+    width: 91%;
+    z-index: -1;
+}
+.conteudo p{
+    overflow: auto;
+    margin-top: 10px;
 }
 /*Parte onde faremos as animações*/
 @keyframes moveRedes{

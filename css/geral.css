@@ -118,6 +118,9 @@ nav a:hover{
     align-items: center;
     height: 100%;
 }
+.burguer{
+    display:none;
+}
 .menu{
     color: #000;
     font-size: 24px;
@@ -159,7 +162,8 @@ ul.border{
 }
 .rodaforro{
     width: 200px;
-    align-self: center;
+    align-self: center;    
+    z-index: -2;
 }
 .conteudo{
     display: flex;
@@ -236,14 +240,20 @@ ul.border{
         background: #c4302b;
         color:#fff;
     }
+    .menus{
+        display: none;
+    }
+    .burguer{
+        display: block;
+    }
 }
 @media (min-width: 1920px) {
     .container{
-        width: 1920px;
+        width: 1440px;
     }
 }
 @media (min-width: 2560px) {
     .container{
-        width: 2560px;
+        width: 1440px;
     }
 }

@@ -144,8 +144,11 @@ nav a:hover{
 .menu:active {
     box-shadow: inset -2px 2px 3px 3px rgba(0, 0, 0, 0.42);
 }
-ul.border{
+.border{
     margin-bottom: 0;
+}
+.x{
+    display: none;
 }
 /*Parte onde se altera o banner*/
 .banner{
@@ -257,11 +260,29 @@ ul.border{
         align-items: center;
     }
     .topo{
-        height: 85px;
+        height: auto;
     }
     .top{
         flex-wrap: wrap-reverse;
-        height: 67px;
+    }
+    .lista{
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+    }
+    .menu{
+        color: #fff;
+    }
+    .menu:hover {
+        text-shadow: 1px 1px rgb(255, 255, 255);
+        color: #fff;
+    }
+    .menu:active{
+        box-shadow: none;
+    }
+    .border{
+        margin-top: 10px;
+        margin-bottom: 10px;
     }
     .redes{
         justify-content: center;
@@ -291,9 +312,12 @@ ul.border{
     .menus{
         display: none;
     }
+    .menuMobile.x{
+        display: block;
+    }
     .burguer{
         position: absolute;
-        width: 57px;
+        width: 56px;
         height: 10%;
         right: 10px;
         top: 10px; 
@@ -370,8 +394,8 @@ ul.border{
         -moz-transform: rotate(45deg);
         -o-transform: rotate(45deg);
         transform: rotate(45deg);
-        top: 0px;
-        left: 8px;
+        top: 0;
+        left: 5px;
     }
         
     .animated-icon3.open span:nth-child(2) {
@@ -385,7 +409,7 @@ ul.border{
         -o-transform: rotate(-45deg);
         transform: rotate(-45deg);
         top: 21px;
-        left: 8px;
+        left: 4px;
     }   
 }
 @media (width:320px){

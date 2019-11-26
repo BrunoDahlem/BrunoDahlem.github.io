@@ -147,7 +147,7 @@ nav a:hover{
 .border{
     margin-bottom: 0;
 }
-.x{
+.menuMobile{
     display: none;
 }
 /*Parte onde se altera o banner*/
@@ -261,6 +261,7 @@ nav a:hover{
     }
     .topo{
         height: auto;
+        z-index: 20;
     }
     .top{
         flex-wrap: wrap-reverse;
@@ -312,8 +313,18 @@ nav a:hover{
     .menus{
         display: none;
     }
-    .menuMobile.x{
+    .menuMobile{
         display: block;
+        position: absolute;
+        background: #000;
+        z-index: -2;
+        transition: all 1s cubic-bezier(.19,1,.22,1);
+        transform: translateY(-220px);
+    }
+    .x.menuMobile{
+        z-index: 6;
+        transition: all 1s cubic-bezier(.19,1,.22,1);
+        transform: translateY(143px);
     }
     .burguer{
         position: absolute;
